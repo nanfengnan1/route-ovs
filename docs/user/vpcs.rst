@@ -35,7 +35,8 @@ VPCS 测试终端
   docker exec pc_A ip addr
   docker exec frr_A ip addr
 
-地址规划、DHCP 服务端配置和连通性验证用例：待补充。
+地址规划、route 的 dnsmasq 服务端、VPCS 的 DHCP 客户端命令和验证步骤，
+见 :doc:`network` 的 DHCP 小节。
 
 删除连接
 ----------------------------------------

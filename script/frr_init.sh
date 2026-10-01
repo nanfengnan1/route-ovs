@@ -225,11 +225,11 @@ function generate_topology() {
         return 1
     fi
     script_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd) || return 1
-    if [[ ! -f "$script_dir/frr_topology.py" ]]; then
-        echo >&2 "错误：缺少 ${script_dir}/frr_topology.py，请将辅助脚本放在同一目录"
+    if [[ ! -f "$script_dir/python/frr_topology.py" ]]; then
+        echo >&2 "错误：缺少 ${script_dir}/python/frr_topology.py，请将辅助脚本放在 python 子目录"
         return 1
     fi
-    python3 "$script_dir/frr_topology.py" --containers-file "$CONTAINER_FILE" --output "$output_file"
+    python3 "$script_dir/python/frr_topology.py" --containers-file "$CONTAINER_FILE" --output "$output_file"
 }
 
 function help_menu() {

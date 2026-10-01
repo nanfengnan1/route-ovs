@@ -36,6 +36,7 @@
 
 * 按 :doc:`topology` 规划 OVS 链路并采集拓扑。
 * 按 :doc:`vpcs` 接入测试终端。
+* 按 :doc:`network` 配置 DHCP 服务端和客户端，验证地址与连通性。
 * 按 :doc:`protocols/index` 编写和执行具体协议实验。
 
 结束实验
