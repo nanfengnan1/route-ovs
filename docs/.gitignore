@@ -1,0 +1,6 @@
+/html/
+/pdf/
+/_build/
+/.venv/
+__pycache__/
+*.pyc
